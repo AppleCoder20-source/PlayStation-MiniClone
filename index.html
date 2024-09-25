@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel ="stylesheet" href ="styles.css">
+    <style>
+        /* PlayStation 4 themed blue navbar */
+        .navbar {
+            background-color: #003087 !important; /* Dark Blue similar to PS4 UI */
+            display: flex;
+            justify-content: space-between; /* Space between brand and nav items */
+            align-items: center; 
+            padding: 10px 20px; 
+        }
+        </style>
+    <title>Mashiurs App</title>
+</head>
+
+<body class = "bg">
+    <nav class="navbar bg-primary navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid backgrounds">
+          <a class="navbar-brand" href="#">
+            <img id = "logo" 
+            src = "https://media.designrush.com/inspiration_images/288865/conversions/PS0_746661b01c04-mobile.jpg" alt ="PS Logo"/> </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2">
+                <a class="nav-link active" aria-current="page" href="#index.html">Home</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link" href="about.html">About  US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Game Information
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="games.html">Games</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <h3 class = "center"> Welcome to Mashiur's App</h3>
+      <div class = "Box" >
+        <h2> Play <span style = "color:red"> Exclusive </span> Playstation games!</h2>
+        <img src = "https://miro.medium.com/v2/resize:fit:5120/1*ZbZYU4Mfq0HBnbyHxWlMtA.png"
+        class = "GAMES" alt = "Games">
+        <img src = "data:image/jpeg;base64,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"
+        id = "PS5" alt = "PS5 info">
+        <img src = "https://live.staticflickr.com/65535/48039981186_d69feb6f4f_k.jpg" id = "PS5G">
+      </div>
+      <div class = "gif-container">
+        <img src = "https://media.tenor.com/JQTvrwvjfk0AAAAi/sony.gif" class="Gifs" alt = "Gif"> 
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

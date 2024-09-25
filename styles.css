@@ -1,0 +1,189 @@
+/* This is Universal Selector I used */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    background-color:#0070D1;
+
+
+
+
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid.backgrounds {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds space between elements */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Used a Typewriter effect here  */
+.center {
+    text-align: center;
+    margin: 20px 0;
+    overflow: hidden; 
+    border-right: .15em solid red; /* The typwriter cursor */
+    white-space: nowrap; 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0); }
+  }
+
+/* Super Container */
+.super {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 20px 0;
+}
+
+/* Box Class */
+.Box {
+    display: flex;
+    flex-direction: column; /* Place items side by side */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Add space between elements */
+    text-align: center;
+}
+
+/* GIF Container */
+.gif-container {
+    display: flex; 
+    flex-direction: row;
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+    
+}
+
+
+.Gifs, .GAMES {
+    display: block;
+}
+
+.PS5 {
+    width: 550px;
+    height: 550px;
+    margin: 20px 0;
+    margin-right:10px;
+}
+
+/* Smaller GIF */
+.Gifs {
+    width: 100px; /* Adjusted width for a smaller size */
+    height: auto; 
+}
+
+
+
+
+h2 {
+    font-size: 28px;
+    margin: 0; 
+}
+
+
+.Gifs{
+    height:250px;
+    width:350px;
+    position: relative;
+    top:-1600px; /* This allows gif to move upwards */
+    margin-right:70%;
+
+}
+.container {
+    display: flex;
+}
+
+.card {
+    border: 3px solid blue;
+    background-color: #f0f8ff; /* Light blue background */
+    height: 450px; 
+    margin-bottom: 30px; 
+}
+
+.card-imgs {
+    width: 100%;
+    height: auto;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover; 
+}
+
+.carousel-inner {
+    background-color: #0070D1;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.carousel-control-next,
+.carousel-control-prev{ 
+    filter: invert(1%);
+}
+
+
+#PS5 {
+    width: 50%;
+    height: 450px;
+    margin-top:40px; /* add a bit of space between the 2 images*/
+}
+#PS5G{
+    width: 100%;
+    height:1100px;
+    margin-top:90px;
+
+    
+}
+
+.GAMES {
+   width: 90%;
+   margin-left: 100px;
+   
+}
+/* Media Query for Small Screens so all information will be seen in mobile devices*/
+@media (max-width: 768px) {
+    .gif-container {
+        flex-direction: column;
+        align-items: center;
+        background-color: #f8bbd0; /* Light pink background for small screens */
+    }
+    .Gifs, .GAMES {
+        width: 50%;
+        margin-top: -650px;
+        max-width: 400px; 
+        height: auto;
+    }
+}
