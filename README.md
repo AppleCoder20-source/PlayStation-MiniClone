@@ -1,7 +1,4 @@
-# Project Title
-PlayStation Mini Clone 
-
-
+# Playstation Mini Clone App
 
 ## Description
 
