@@ -1,9 +1,8 @@
 # Playstation Mini Clone App
 
 ## Description
-
-Implemented a mini clone version of Playstation
-Some pages such as cards  is designed directly from that, Have a games page where users can see all the games being currently offered
+This is a Gaming Website inspired from Playstation.com, 
+  A Games page where users can see all the games being currently offered
 A contact page for the users in case they have any questions
 A contact page for administration staff if they have any issues
 
